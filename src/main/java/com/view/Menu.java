@@ -38,10 +38,10 @@ public class Menu {
      */
     public static int mainMenu() {
         for(int attempt = 0; attempt < 3; attempt++) {
-            String choice = JOptionPane.showInputDialog("\tMain Menu \n\n\tEnter your choice 1-2\n" +
+            String choice = JOptionPane.showInputDialog("\tMain Menu \n\n\tEnter your choice 1-3\n" +
                     " -1- Create Employee.\n"         +
                     " -2- Find Employee with Anniversary.\n" +
-                    " -3- Go back to main menu\n\n");
+                    " -3- Exit\n\n");
             if(isValidChoice(Integer.parseInt(choice), 4)) {
                 return Integer.parseInt(choice);
             }
